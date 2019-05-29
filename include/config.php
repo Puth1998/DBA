@@ -1,6 +1,6 @@
 <?php
 //Database static
-define('DB_NAME', 'swe_db');
+define('DB_NAME', 'restautant');
 
 define('INSERT_COL_SUCCESS', 0);
 define('INSERT_COL_FAILED', 1);

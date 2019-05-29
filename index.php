@@ -1,6 +1,8 @@
 <?php
 require_once '/lib/Slim/Slim/Slim.php';
-require_once '/controllers/StudentController.php';
+require_once '/controllers/restController.php';
+require_once '/controllers/tableController.php';
+
 
   Slim\Slim::registerAutoloader();
   $app = new Slim\Slim();
@@ -12,31 +14,33 @@ require_once '/controllers/StudentController.php';
     echo json_encode($response, JSON_PRETTY_PRINT);
   }
 
-  $app->get('/hello',['StudentController', 'index']);
+  $app->get('/getRest',['restController', 'index']);
+
+  $app->get('/getTable',['tableController', 'index']);
   
-  $app->get('/findByName/:name', function ($name) {
-    StudentController::findByName($name);
-  });
+  // $app->get('/findByName/:name', function ($name) {
+  //   StudentController::findByName($name);
+  // });
 
-  $app->post('/search', function() use($app){
-    StudentController::search($app->request()); //name, age 
-  });
+  // $app->post('/search', function() use($app){
+  //   StudentController::search($app->request()); //name, age 
+  // });
 
-   $app->post('/insert', function() use($app){
-    StudentController::insert($app->request()); //$name , $age, $education , $address
-  });
+  //  $app->post('/insert', function() use($app){
+  //   StudentController::insert($app->request()); //$name , $age, $education , $address
+  // });
 
-  $app->get('/findStudentById/:id', function ($id) {
-    StudentController::findById($id);
-  });
+  // $app->get('/findStudentById/:id', function ($id) {
+  //   StudentController::findById($id);
+  // });
 
-  $app->post('/update', function() use($app){
-    StudentController::update($app->request()); 
-  });
+  // $app->post('/update', function() use($app){
+  //   StudentController::update($app->request()); 
+  // });
 
-  $app->get('/delete/:id', function ($id) {
-    StudentController::delete($id);
-  });
+  // $app->get('/delete/:id', function ($id) {
+  //   StudentController::delete($id);
+  // });
 
 
 
