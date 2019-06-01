@@ -1,3 +1,9 @@
+<?php 
+
+    $id = $_GET['id'];
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,13 +31,22 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+        <style>
+        body {
+          background-color: 		#DCDCDC;
+          }
+        
+        
+        </style>
   </head>
-  <body class="home">
+  
+  <body class="home" >
     <!-- navbar-->
     <header class="header">
       <div role="navigation" class="navbar navbar-default">
         <div class="container">
-          <div class="navbar-header"><a href="index.html" class="navbar-brand">Barunka.</a>
+          <div class="navbar-header"><a href="index.php" class="navbar-brand">Xin lin.</a>
             <div class="navbar-buttons">
               <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
             </div>
@@ -83,14 +98,14 @@
     </div>
     <!-- *** LOGIN MODAL END ***-->
     <div id="carousel-home" data-ride="carousel" class="carousel slide carousel-fullscreen carousel-fade">
-      <!-- Indicators-->
-      <ol class="carousel-indicators">
+    
+      <!-- <ol class="carousel-indicators">
         <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-home" data-slide-to="1"></li>
         <li data-target="#carousel-home" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides-->
-      <div role="listbox" class="carousel-inner">
+      </ol> -->
+     
+      <!-- <div role="listbox" class="carousel-inner">
         <div style="background-image: url('img/carousel3.jpg');" class="item active">
           <div class="overlay"></div>
           <div class="carousel-caption">
@@ -113,106 +128,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- <section class="background-gray-lightest negative-margin">
-      <div class="container">
-        <h1> Mauris placerat eleifend leo.</h1>
-        <p class="lead">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>
-        <p> <a href="text.html" class="btn btn-ghost">Continue reading   </a></p>
-      </div>
-    </section> -->
-
+  
     <section class="section--padding-bottom-small">
       <div class="container">
-        <!-- <div class="row">
-          <div class="col-sm-6">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog4.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Rit eget tincidunt condimentum</a></h3>
-              <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading   </a></p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog5.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Tempor sit amet</a></h3>
-              <p class="post__intro"> Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading   </a></p>
-            </div>
-          </div>
-        </div> -->
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog1.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Rit eget tincidunt</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog2.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Tempor sit amet</a></h3>
-              <!-- <p class="post__intro"> Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog3.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Vestibulum erat wisi</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog3.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Vestibulum erat wisi</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog1.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Rit eget tincidunt</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog2.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Tempor sit amet</a></h3>
-              <!-- <p class="post__intro"> Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog3.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Vestibulum erat wisi</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="post">
-              <div class="image"><a href="text.html"><img src="img/blog3.jpg" alt="" class="img-responsive"></a></div>
-              <h3><a href="text.html">Vestibulum erat wisi</a></h3>
-              <!-- <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="rest"></div>
       </div>
     </section>
+
     <!--   *** SERVICES ***-->
     <!-- <section class="background-gray-lightest">
       <div class="container clearfix">
@@ -340,6 +264,77 @@
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+   
+
+
+
+    $(document).ready(function () {
+    
+      search();     
+
+      function search(data){
+        $.get("http://localhost/DBA/getTable", data,
+        function (data, textStatus, jqXHR) {
+          renderTable(data); 
+          // console.log(data);
+          reserv();
+        });
+      }
+
+      function reserv(){
+        $.post("http://localhost/DBA/getReser", {"restId": <?=$id ?>, "cusId":localStorage.getItem('customerId')},
+          function (data, textStatus, jqXHR) {
+              $.each(data, function (i, v) { 
+                 $("#pointer-"+v.tableId).css("pointer-events", "none");
+                 $("#pointer-"+v.tableId).css("filter", "grayscale(100%)");
+              });
+          }
+        );
+      }
+
+      // $("#form").submit(function (e) { 
+      //   e.preventDefault();
+      //   var data = $(this).serialize();
+      //   search(data);          
+      // });
+
+      function renderTable(data){
+        var rest = $("#rest");
+        rest.empty();
+        $.each(data, function (index, value) { 
+          rest.append('<div class="col-sm-3">'
+            +'<div class="post" id="pointer-'+value.id+'">'
+              +'<div class="image"> <a href="booking.php?restId=<?=$id?>&tableId='+value.id+'"><img src="img/'+value.picture+'" alt="" class="img-responsive"></a></div>'
+              +'<h3><a href="booking.php?restId=<?=$id?>&tableId='+value.id+'">'+value.number+'</a></h3>'
+              +'<p class="read-more"><a href="booking.php?restId=<?=$id?>&tableId='+value.id+'" class="btn btn-ghost">Choose</a></p>'
+            +'</div>'
+
+          +'</div>')
+        });
+           
+
+      }
+
+      // $("#btn_insert").click(function(){
+      //     $.post("http://localhost/slimmongo/insert",
+      //       { name : $( "#name" ).val(), 
+      //       age : $( "#age" ).val(), 
+      //       education0 : $( "#education" ).val(), 
+      //       education1 : $( "#education1" ).val(), 
+      //       education2 : $( "#education2" ).val(), 
+      //       hno : $( "#hno" ).val(), 
+      //       subdistrict : $( "#subdistrict" ).val(), 
+      //       district : $( "#district" ).val(), 
+      //       province : $( "#province" ).val()
+      //     }, 
+      //     function(data, status){
+      //           alert("Data: " + data + "\nStatus: " + status);
+      //     });
+      // });
+
+    });
+  
+  
+  </script>
   </body>
 </html>

@@ -16,5 +16,11 @@ class tableModel {
         return $cursor;
     }
 
+    public function getNameById($id){
+        $query =  array("_id" => $id );
+        $cursor = $this->col->findOne($query);
+        return $cursor;
+    }
+
     
 }
