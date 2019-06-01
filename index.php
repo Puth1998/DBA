@@ -5,9 +5,6 @@ require_once '/controllers/tableController.php';
 require_once '/controllers/bookingController.php';
 require_once '/controllers/reserController.php';
 
-
-
-
   Slim\Slim::registerAutoloader();
   $app = new Slim\Slim();
 
@@ -24,7 +21,6 @@ require_once '/controllers/reserController.php';
 
   // $app->get('/getReser',['reserController', 'index']);
 
-
   $app->post('/insert', function() use($app){
     bookingController::insert($app->request()); //$name , $age, $education , $address
   });
@@ -36,43 +32,6 @@ require_once '/controllers/reserController.php';
   $app->post('/getReser', function() use($app){
     reserController::getReser($app->request()); //$name , $age, $education , $address
   });
-
-  // $app->get('/findByName/:name', function ($name) {
-  //   StudentController::findByName($name);
-  // });
-
-  // $app->post('/search', function() use($app){
-  //   StudentController::search($app->request()); //name, age 
-  // });
-
-  //  $app->post('/insert', function() use($app){
-  //   StudentController::insert($app->request()); //$name , $age, $education , $address
-  // });
-
-  // $app->get('/findStudentById/:id', function ($id) {
-  //   StudentController::findById($id);
-  // });
-
-  // $app->post('/update', function() use($app){
-  //   StudentController::update($app->request()); 
-  // });
-
-  // $app->get('/delete/:id', function ($id) {
-  //   StudentController::delete($id);
-  // });
-
-
-
-  // $app->get('/', ['TestController', 'index']);
-  // $app->post('/insert', function() use($app){
-  //   TestController::insert($app->request());
-  // });
-  // $app->get('/search/:name', function ($name) {
-  //   TestController::search($name);
-  // });
-  // $app->get('/getdata/:age', function ($age) {
-  //   TestController::getdata($age);
-  // });
 
   $app->run();
 ?>

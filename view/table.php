@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Barunka - Multipurpose Bootstrap template by Bootstrapious.com</title>
+    <title>Xin lin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -27,21 +27,12 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="x.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-      
-        <style>
-        body {
-          background-color: 		#DCDCDC;
-          }
-        
-        
-        </style>
   </head>
-  
-  <body class="home" >
+  <body class="home">
     <!-- navbar-->
     <header class="header">
       <div role="navigation" class="navbar navbar-default">
@@ -64,7 +55,7 @@
                 </ul>
               </li>
               <li><a href="contact.html">Contact</a></li>
-            </ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-white pull-left"><i class="fa fa-sign-in"></i>Log in</a>
+            </ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-white pull-left"><i class="fa fa-sign-in"></i>Log OUT</a>
           </div>
         </div>
       </div>
@@ -99,141 +90,26 @@
     <!-- *** LOGIN MODAL END ***-->
     <div id="carousel-home" data-ride="carousel" class="carousel slide carousel-fullscreen carousel-fade">
     
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-home" data-slide-to="1"></li>
-        <li data-target="#carousel-home" data-slide-to="2"></li>
-      </ol> -->
-     
-      <!-- <div role="listbox" class="carousel-inner">
-        <div style="background-image: url('img/carousel3.jpg');" class="item active">
+      <div role="listbox" class="carousel-inner">
+        <div style="background-image: url('img/bgtable.jpg');" class="item active">
           <div class="overlay"></div>
           <div class="carousel-caption">
-            <h1 class="super-heading">Barunka</h1>
-            <p class="super-paragraph">A multi-purpose Bootstrap template by  <a href="https://bootstrapious.com">Bootstrapious.com</a>.</p>
+            <h1 class="super-heading"></h1>
+            <p class="super-paragraph">“Tell me what you eat, I’ll tell you who you are.” – Anthelme Brillat-Savarin</a>.</p>
           </div>
-        </div>
-        <div style="background-image: url('img/carousel2.jpg');" class="item">
-          <div class="overlay"></div>
-          <div class="carousel-caption">
-            <h1 class="super-heading">Praesent dapibus, neque id cursus faucibus</h1>
-            <p class="super-paragraph">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci</p>
-          </div>
-        </div>
-        <div style="background-image: url('img/carousel1.jpg');" class="item">
-          <div class="overlay"></div>
-          <div class="carousel-caption">
-            <h1 class="super-heading">Lorem ipsum dolor color</h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-          </div>
-        </div>
+        </div>       
       </div>
-    </div> -->
-
+    </div>
   
+    
+    <input type="hidden" name="id" id="id" value="<?=$id?>">
+
     <section class="section--padding-bottom-small">
       <div class="container">
         <div class="row" id="rest"></div>
       </div>
     </section>
 
-    <!--   *** SERVICES ***-->
-    <!-- <section class="background-gray-lightest">
-      <div class="container clearfix">
-        <div class="row services">
-          <div class="col-md-12">
-            <h2>Services</h2>
-            <p class="lead margin-bottom--medium"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-alarm"></i></div>
-                  <h4 class="services-heading">Webdesign</h4>
-                  <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-cloud"></i></div>
-                  <h4 class="services-heading">Print</h4>
-                  <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-coffee"></i></div>
-                  <h4 class="services-heading">SEO and SEM</h4>
-                  <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-monitor"></i></div>
-                  <h4 class="services-heading">Consulting</h4>
-                  <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-signal"></i></div>
-                  <h4 class="services-heading">Email Marketing</h4>
-                  <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box box-services">
-                  <div class="icon"><i class="pe-7s-id"></i></div>
-                  <h4 class="services-heading">UX &amp; UI</h4>
-                  <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!--   *** SERVICES END ***-->
-    <!-- portfolio-->
-    <!-- <section id="portfolio" class="section--no-padding-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Gallery or portfolio</h1>
-            <p class="lead margin-bottom--big">You can make also a portfolio or image gallery.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row no-space">
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-1.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 1"><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-2.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 2"><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-3.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 3"><img src="img/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-4.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 4"><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-5.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 5"><img src="img/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6"><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 7"><img src="img/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-8.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8"><img src="img/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <footer class="footer">
       <div class="footer__copyright">
         <div class="container">
@@ -269,7 +145,7 @@
 
 
     $(document).ready(function () {
-    
+      
       search();     
 
       function search(data){
@@ -292,11 +168,7 @@
         );
       }
 
-      // $("#form").submit(function (e) { 
-      //   e.preventDefault();
-      //   var data = $(this).serialize();
-      //   search(data);          
-      // });
+    
 
       function renderTable(data){
         var rest = $("#rest");
@@ -306,6 +178,7 @@
             +'<div class="post" id="pointer-'+value.id+'">'
               +'<div class="image"> <a href="booking.php?restId=<?=$id?>&tableId='+value.id+'"><img src="img/'+value.picture+'" alt="" class="img-responsive"></a></div>'
               +'<h3><a href="booking.php?restId=<?=$id?>&tableId='+value.id+'">'+value.number+'</a></h3>'
+              +'<p class="post__intro" ><a href="table.php?id='+value.id+'">'+value.type+'</a></p>'
               +'<p class="read-more"><a href="booking.php?restId=<?=$id?>&tableId='+value.id+'" class="btn btn-ghost">Choose</a></p>'
             +'</div>'
 
@@ -315,22 +188,7 @@
 
       }
 
-      // $("#btn_insert").click(function(){
-      //     $.post("http://localhost/slimmongo/insert",
-      //       { name : $( "#name" ).val(), 
-      //       age : $( "#age" ).val(), 
-      //       education0 : $( "#education" ).val(), 
-      //       education1 : $( "#education1" ).val(), 
-      //       education2 : $( "#education2" ).val(), 
-      //       hno : $( "#hno" ).val(), 
-      //       subdistrict : $( "#subdistrict" ).val(), 
-      //       district : $( "#district" ).val(), 
-      //       province : $( "#province" ).val()
-      //     }, 
-      //     function(data, status){
-      //           alert("Data: " + data + "\nStatus: " + status);
-      //     });
-      // });
+      
 
     });
   

@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Barunka - Multipurpose Bootstrap template by Bootstrapious.com</title>
+    <title>Xin lin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -28,7 +28,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="x.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -56,7 +56,7 @@
                 </ul>
               </li>
               <li><a href="contact.html">Contact</a></li>
-            </ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-ghost pull-left"><i class="fa fa-sign-in"></i>Log in</a>
+            </ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-ghost pull-left"><i class="fa fa-sign-in"></i>Log OUT</a>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
             <div class="box-simple">
               <div class="icon"><i class="pe-7s-check"></i></div>
               <div class="content">
-                <h4>Contact Booking</h4>
+                <h4>Confirm Booking</h4>
                 <!-- <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p> -->
                 <form id="form">
                   <input type="hidden" name="restId" id="restId" value="<?=$restId?>">
@@ -242,7 +242,7 @@
           restId : $( "#restId" ).val(), 
           tableId : $( "#tableId" ).val()
         },function (data, textStatus, jqXHR) { 
-            console.log(data);
+            // console.log(data);
             $("#restName").html(data.rest.name);
             $("#tableName").html(data.table.number+" ("+data.table.type+")");
         });
@@ -259,6 +259,7 @@
           }, 
           function(data, status){
               alert("Data: " + data + "\nStatus: " + status);
+              window.location = 'index.php';          
           });
       });
 

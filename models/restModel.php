@@ -21,6 +21,4 @@ class restModel {
         $cursor = $this->col->findOne($query);
         return $cursor;
     }
-
-    
 }
